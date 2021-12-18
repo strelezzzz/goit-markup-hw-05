@@ -292,6 +292,22 @@ a.active-page {
   font-weight: bold;
 }
 
+.active-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  height: 4px;
+  background-color: var(--color-active);
+  border-radius: 2px;
+}
+
+.nav-list .item {
+  position: relative;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contacts:hover,
