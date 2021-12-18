@@ -55,6 +55,9 @@ header {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  transition-property: box-shadow;
+  box-shadow: none;
+  transition-duration: 2500ms;
 }
 
 .projects-list .item:not(:nth-child(3n)) {
@@ -250,6 +253,10 @@ ul.contacts-list {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.active-page {
@@ -386,6 +393,10 @@ a.active-page {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--color-active);
   font-weight: bold;
@@ -542,6 +553,11 @@ a.active-page {
   justify-content: center;
   align-items: center;
   fill: var(--social-color);
+  border-radius: 50%;
+
+  transition-property: fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item:not(:last-child) {
@@ -561,6 +577,10 @@ a.active-page {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--social-color);
+
+  transition-property: fill border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
