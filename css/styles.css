@@ -55,9 +55,6 @@ header {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  transition-property: box-shadow;
-  box-shadow: none;
-  transition-duration: 2500ms;
 }
 
 .projects-list .item:not(:nth-child(3n)) {
@@ -108,6 +105,12 @@ a {
   display: none;
   margin: 0;
   padding: 0;
+}
+
+.projects-list > .item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list > .item:hover,
@@ -417,6 +420,10 @@ a.active-page {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+
+  transition-property: background-color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .buttons:hover,
@@ -568,6 +575,7 @@ a.active-page {
   display: flex;
   padding-bottom: 94px;
 }
+
 .client-link {
   display: flex;
   width: 170px;
