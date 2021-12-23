@@ -602,8 +602,9 @@ a.active-page {
   align-items: center;
   fill: var(--social-color);
   border-radius: 50%;
+  border: 0px solid transparent;
 
-  transition-property: fill background-color;
+  transition-property: fill background-color border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -686,7 +687,7 @@ a.active-page {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 528px;
@@ -711,7 +712,7 @@ a.active-page {
 
 .close-button {
   display: block;
-  padding: 10px;
+  padding: 7px;
   position: absolute;
   top: 8px;
   right: 8px;
